@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/img_india"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/in"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txt_cloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="20dp"/>
+    <ImageView
+        android:id="@+id/img_cloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/txt_cloud"
+        android:src="@drawable/ic_wb_cloudy_black_24dp"/>
+    <TextView
+        android:id="@+id/city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="productname"
+        android:padding="5dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/img_cloud"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rel_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city_name">
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="productname"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:background="@drawable/round_rec"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/txt_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="productname"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/temp"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="productname"
+        android:padding="5dp"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/rel_temp"
+        />
+
+    <TextView
+        android:id="@+id/txt_view_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View More"
+        android:padding="5dp"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/indigo"
+        android:layout_below="@+id/txt_latitude"
+        />
+
+</RelativeLayout>
